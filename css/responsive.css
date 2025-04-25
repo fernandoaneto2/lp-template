@@ -1,0 +1,412 @@
+/* 
+* WebCreative - Landing Page
+* Estilos adicionais para responsividade
+*/
+
+/* Ajustes para tablets e dispositivos menores */
+@media (max-width: 992px) {
+    /* Ajustes gerais */
+    html {
+        font-size: 15px;
+    }
+    
+    section {
+        padding: 80px 0;
+    }
+    
+    /* Hero section */
+    .hero-section {
+        min-height: 600px;
+        height: auto;
+        padding-bottom: 100px;
+    }
+    
+    .hero-content {
+        padding-top: 50px;
+    }
+    
+    .hero-image img {
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    /* Serviços */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Portfólio */
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Processo */
+    .process-timeline::before {
+        left: 30px;
+    }
+    
+    .process-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+    
+    /* Preços */
+    .pricing-card.featured {
+        transform: scale(1.03);
+    }
+    
+    .pricing-card.featured:hover {
+        transform: scale(1.03) translateY(-10px);
+    }
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajustes gerais */
+    html {
+        font-size: 14px;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
+    }
+    
+    /* Header */
+    .header {
+        padding: 10px 0;
+        background-color: white;
+        box-shadow: var(--shadow-sm);
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    /* Menu mobile */
+    .nav-menu {
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        padding: 80px 30px 30px;
+        transition: all 0.4s ease-in-out;
+        z-index: 998;
+        overflow-y: auto;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .menu-toggle {
+        z-index: 999;
+    }
+    
+    .nav-menu li {
+        margin: 0 0 15px;
+        width: 100%;
+    }
+    
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 10px 0;
+        display: block;
+        width: 100%;
+    }
+    
+    /* Hero section */
+    .hero-section {
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 30px;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /* Serviços */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Portfólio */
+    .portfolio-filter {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Processo */
+    .process-item {
+        margin-bottom: 30px;
+    }
+    
+    .process-content {
+        width: calc(100% - 80px);
+        padding: 15px;
+    }
+    
+    .process-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Depoimentos */
+    .testimonial-content {
+        padding: 25px 20px;
+    }
+    
+    .testimonial-content p {
+        font-size: 1rem;
+    }
+    
+    /* Preços */
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .pricing-card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1);
+        border-width: 2px;
+    }
+    
+    .pricing-card.featured:hover {
+        transform: translateY(-10px);
+    }
+    
+    /* Contato */
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .contact-form {
+        padding: 25px 20px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 60px 0 30px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    /* WhatsApp flutuante */
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    /* Scroll to top */
+    .scroll-to-top {
+        right: 85px;
+        bottom: 20px;
+    }
+}
+
+/* Ajustes para dispositivos muito pequenos */
+@media (max-width: 480px) {
+    /* Ajustes gerais */
+    section {
+        padding: 60px 0;
+    }
+    
+    .section-header {
+        margin-bottom: 30px;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* Hero section */
+    .hero-section {
+        min-height: 500px;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+    }
+    
+    /* Portfólio */
+    .portfolio-img {
+        height: 200px;
+    }
+    
+    /* Processo */
+    .process-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .process-content {
+        width: calc(100% - 70px);
+    }
+    
+    .process-number {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+    
+    /* Depoimentos */
+    .testimonial-author img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* Formulário de contato */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px;
+    }
+    
+    /* Botões */
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-section h1 {
+        font-size: 4rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.3rem;
+    }
+}
+
+/* Ajustes para orientação paisagem em dispositivos móveis */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        height: auto;
+        min-height: 450px;
+    }
+    
+    .nav-menu {
+        height: 100vh;
+        overflow-y: auto;
+    }
+}
+
+/* Melhorias de acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Suporte para modo escuro do sistema */
+@media (prefers-color-scheme: dark) {
+    .preloader {
+        background-color: var(--color-dark);
+    }
+}
+
+/* Ajustes para toque em dispositivos móveis */
+@media (hover: none) {
+    .nav-link:hover::after {
+        width: 0;
+    }
+    
+    .nav-link.active::after {
+        width: 100%;
+    }
+    
+    .service-card:hover,
+    .portfolio-item:hover,
+    .pricing-card:hover {
+        transform: none;
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+    
+    /* Aumentar área de toque para elementos interativos */
+    .nav-link,
+    .btn,
+    .service-link,
+    .filter-btn,
+    .social-icon {
+        padding: 10px;
+    }
+    
+    .testimonial-prev,
+    .testimonial-next,
+    .dot {
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
